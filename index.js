@@ -4,8 +4,7 @@ function map(src, cb) {
     for (let i = 0; i < src.length; i++) {
         let theElement = src[i]
         r.push(cb(theElement))
-    }
-    
+    }   
     return r;
 }
     
@@ -15,7 +14,6 @@ function reduce(src, cb, starting){
     
     for (; i < src.length; i++) {
         r = cb(src[i], r)
-    }
-    
+    }   
     return r;
 }
